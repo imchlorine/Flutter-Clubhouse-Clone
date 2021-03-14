@@ -4,7 +4,7 @@ import 'package:ClubHouseClone/app/navigation_service.dart';
 import 'package:ClubHouseClone/app/route_names.dart';
 import 'package:ClubHouseClone/screen/home_view.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:ClubHouseClone/share/text.dart' as text;
+
 
 void main() {
   setupLocator();

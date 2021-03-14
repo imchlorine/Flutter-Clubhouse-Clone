@@ -9,7 +9,6 @@ import 'package:ClubHouseClone/share/shared_style.dart';
 import 'package:ClubHouseClone/share/snapping_scroll_physics.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
-// import 'package:ClubHouseClone/share/text.dart' as text;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_emoji/flutter_emoji.dart';
@@ -171,6 +170,7 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                 "Clubhouse is full of interesting people! \n Try following at least 25.",
                 textAlign: TextAlign.center,
                 textScaleFactor: 1,
+
                 style: TextStyle(
                   color: black,
                   fontWeight: FontWeight.bold,
@@ -310,6 +310,7 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                             color: brown,
                             fontWeight: FontWeight.bold,
                           ),
+
                         ),
                       ],
                     ),
@@ -369,6 +370,7 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                       color: brown,
                       fontWeight: FontWeight.bold,
                     ),
+
                   ),
                   onPressed: () =>
                       _navigationService.navigateTo(SearchViewRoute),
@@ -588,6 +590,7 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                 Text(
                   EmojiParser().get("earth_asia").code,
                   textScaleFactor: 1,
+
                 ),
                 SizedBox(
                   width: 5,
@@ -599,6 +602,7 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                     color: brown,
                     fontWeight: FontWeight.bold,
                   ),
+
                 ),
               ],
             ),
@@ -655,6 +659,7 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                               color: white,
                               fontWeight: FontWeight.bold,
                             ),
+
                           ),
                         ],
                       ),
