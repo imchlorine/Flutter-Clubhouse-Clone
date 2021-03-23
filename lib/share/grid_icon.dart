@@ -30,7 +30,7 @@ class GridIconState extends State<GridIcon> {
       child: GestureDetector(
         onTap: widget.onTap,
         child: Icon(
-          CupertinoIcons.square_grid_2x2_fill,
+          CupertinoIcons.circle_grid_3x3_fill,
           color: brown,
         ),
       ),

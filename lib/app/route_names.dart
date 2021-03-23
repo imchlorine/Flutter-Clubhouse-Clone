@@ -17,7 +17,6 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRouteCupertino(
         viewToShow: SearchView(),
       );
-
     default:
       return _getPageRouteCupertino(
         viewToShow: CupertinoPageScaffold(

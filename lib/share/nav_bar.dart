@@ -17,7 +17,7 @@ import 'package:flutter/widgets.dart';
 /// Standard iOS navigation bar height without the status bar.
 ///
 /// This height is constant and independent of accessibility as it is in iOS.
-const double _kNavBarPersistentHeight = 75;
+const double _kNavBarPersistentHeight = 65;
 
 /// Size increase from expanding the navigation bar into an iOS-11-style large title
 /// form in a [CustomScrollView].

@@ -61,13 +61,16 @@ const TextStyle buttonTitleTextStyle =
 
 // Colors
 const Color themeColor = Color(0xFFf1eee5);
+const Color followColor = Color(0xFFf7f4ef);
 const Color indigo = Color(0xFF5c75a6);
 const Color green = Color(0xFF56ab68);
 const Color brown = Color(0xFF6f664e);
+const Color search = Color(0xFFe3e0d9);
 const Color white = Color(0xFFffffff);
 const Color black = Color(0xFF000000);
 const Color grey = Color(0xFFf2f2f2);
 const Color grey1 = Color(0xFFdddddd);
+
 const Color grey2 = Color(0xFFe8e7ec);
 const Color grey3 = Color(0xFFf9f8fb);
 

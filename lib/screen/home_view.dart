@@ -64,7 +64,6 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
       backgroundColor: themeColor,
       navigationBar: nav_bar.CupertinoNavigationBar(
         border: null,
-        padding: EdgeInsetsDirectional.fromSTEB(15, 20, 5, 15),
         backgroundColor: themeColor,
         leading: GestureDetector(
           onTap: () {
@@ -170,7 +169,6 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                 "Clubhouse is full of interesting people! \n Try following at least 25.",
                 textAlign: TextAlign.center,
                 textScaleFactor: 1,
-
                 style: TextStyle(
                   color: black,
                   fontWeight: FontWeight.bold,
@@ -274,50 +272,34 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
               ),
             ),
             Container(
-              alignment: Alignment.center,
-              child: Stack(
-                children: [
-                  Positioned(
-                    top: 8,
-                    left: 0,
-                    right: 0,
-                    child: Container(
-                      height: 30,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: brown.withOpacity(0.1),
+              margin: EdgeInsets.symmetric(horizontal: 80),
+              child: CupertinoButton(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                borderRadius: BorderRadius.circular(20),
+                minSize: 30,
+                color: brown.withOpacity(0.1),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      CupertinoIcons.person_crop_circle_badge_plus,
+                      color: brown,
+                      size: 15,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "Find more people to follow",
+                      textScaleFactor: 1,
+                      style: TextStyle(
+                        color: brown,
+                        fontWeight: FontWeight.bold,
                       ),
-                      margin: EdgeInsets.symmetric(horizontal: 80),
                     ),
-                  ),
-                  CupertinoButton(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          CupertinoIcons.person_crop_circle_badge_plus,
-                          color: brown,
-                          size: 15,
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          "Find more people to follow",
-                          textScaleFactor: 1,
-                          style: TextStyle(
-                            color: brown,
-                            fontWeight: FontWeight.bold,
-                          ),
-
-                        ),
-                      ],
-                    ),
-                    onPressed: () =>
-                        _navigationService.navigateTo(SearchViewRoute),
-                  ),
-                ],
+                  ],
+                ),
+                onPressed: () => _navigationService.navigateTo(SearchViewRoute),
               ),
             ),
             SizedBox(
@@ -346,36 +328,20 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
             ),
           ),
           Container(
-            alignment: Alignment.center,
-            child: Stack(
-              children: [
-                Positioned(
-                  top: 3,
-                  left: 0,
-                  right: 0,
-                  child: Container(
-                    height: 40,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: brown.withOpacity(0.1),
-                    ),
-                  ),
+            child: CupertinoButton(
+              color: brown.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(20),
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+              minSize: 30,
+              child: Text(
+                "Find people to follow",
+                textScaleFactor: 1,
+                style: TextStyle(
+                  color: brown,
+                  fontWeight: FontWeight.bold,
                 ),
-                CupertinoButton(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
-                  child: Text(
-                    "Find people to follow",
-                    textScaleFactor: 1,
-                    style: TextStyle(
-                      color: brown,
-                      fontWeight: FontWeight.bold,
-                    ),
-
-                  ),
-                  onPressed: () =>
-                      _navigationService.navigateTo(SearchViewRoute),
-                ),
-              ],
+              ),
+              onPressed: () => _navigationService.navigateTo(SearchViewRoute),
             ),
           ),
         ],
@@ -590,7 +556,6 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                 Text(
                   EmojiParser().get("earth_asia").code,
                   textScaleFactor: 1,
-
                 ),
                 SizedBox(
                   width: 5,
@@ -602,7 +567,6 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                     color: brown,
                     fontWeight: FontWeight.bold,
                   ),
-
                 ),
               ],
             ),
@@ -659,7 +623,6 @@ class _HomeViewState extends State<HomeView> with WidgetsBindingObserver {
                               color: white,
                               fontWeight: FontWeight.bold,
                             ),
-
                           ),
                         ],
                       ),
